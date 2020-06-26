@@ -1,0 +1,122 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.hero_heading {
+  left: 43%;
+}
+.slider-dots {
+  right: -3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-dots button {
+  font-size: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #83838b;
+}
+.slider-dots button:focus {
+  outline: none;
+}
+.slider-dots ul {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+.slider-dots li.slick-active button {
+  width: 12px;
+  height: 12px;
+  background-color: #fe7865;
+}
+
+.upto:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 4px;
+  background-color: #fe7865;
+  bottom: -1rem;
+  left: 0px;
+}
+.sub-menu {
+  max-height: 0px;
+  overflow: hidden;
+}
+.menu-trigger.is-open {
+  color: #fe7865;
+}
+.menu-trigger.is-open + .sub-menu {
+  max-height: 100%;
+  overflow: visible;
+}
+
+.box-4 img{left:17%;}
+
+.agree__checkbox + label:after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#ffffff ;
+}
+
+.agree__checkbox:checked + label:after{
+        background-color: #fe7865;
+}
+
+.slick-slide.slick-center .inner__box{
+    padding: 0px 20px;
+}
+
+.slick-slide.slick-center .inner__box > div{
+    padding: 50px 0px;
+}
+
+.slick-slide:not(.slick-center){
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.slick-slider .inner__box .label,
+.slick-slider .inner__box .number{
+    display: none;
+}
+.slick-slide.slick-center .inner__box .label,
+.slick-slide.slick-center .inner__box .number{
+    display: block;
+}
+
+.slider2-dots {
+    left:50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+  }
+  
+  .slider2-dots button {
+    font-size: 0;
+    margin: 0px 10px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #83838b;
+  }
+  .slider2-dots button:focus {
+    outline: none;
+  }
+  .slider2-dots ul {
+    display: flex !important;
+    align-items: center;
+  }
+  .slider2-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
+    background-color: #fe7865;
+  }
